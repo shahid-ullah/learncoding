@@ -19,4 +19,8 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
-]
+        ]
+
+admin.site.index_title = "Welcome to  learncoding Administration"
+admin.site.site_title = "Learncoding Admin"
+admin.site.site_header = "Learncoding Administration"
