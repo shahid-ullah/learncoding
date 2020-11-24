@@ -1,0 +1,14 @@
+<!-- article/templates/article/article_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}articles {% endblock title %}
+
+
+{% block content %}
+  <ul class="list-inline">
+    <a href="{% url 'article_list' %}"><li>{{object.title}}</li></a>
+    <li>{{object.author}}</li>
+    <li>{{object.content}}</li>
+  </ul>
+{% endblock content %}
