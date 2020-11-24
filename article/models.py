@@ -4,13 +4,7 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
-
-class PublishedManager(models.Manager):
-    """
-    """
-    def get_queryset(self):
-        return super(PublishedManager,
-                     self).get_queryset().filter(status="published")
+from .managers import PublishedManager
 
 
 class Article(models.Model):
