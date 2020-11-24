@@ -19,6 +19,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
+    path('', include('article.urls')),
         ]
 
 admin.site.index_title = "Welcome to  learncoding Administration"
