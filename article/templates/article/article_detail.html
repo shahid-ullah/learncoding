@@ -7,8 +7,10 @@
 
 {% block content %}
   <ul class="list-inline">
-    <a href="{% url 'article_list' %}"><li>{{object.title}}</li></a>
+    <a href="{% url 'article:article_list' %}"><li>{{object.title}}</li></a>
     <li>{{object.author}}</li>
-    <li>{{object.content}}</li>
+    <div class="custom">
+      <li>{{object.content}}</li>
+    <div>
   </ul>
 {% endblock content %}
