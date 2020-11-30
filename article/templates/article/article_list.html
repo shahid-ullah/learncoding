@@ -9,7 +9,7 @@
   {% for article in object_list %}
   <div class="">
     <ul class="list-inline">
-      <a href="{% url 'article:article_detail' article.pk %}"><li>{{article.title}}</li></a>
+      <a href="{% url 'article:article_detail' article.slug %}"><li>{{article.title}}</li></a>
       <li>{{article.publish}}</li>
       <!-- <li>{{article.content}}</li> -->
     </ul>
