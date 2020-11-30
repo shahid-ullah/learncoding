@@ -1,4 +1,5 @@
 # article/model.py
+import os
 
 from django.conf import settings
 from django.db import models
@@ -8,6 +9,8 @@ from django.utils import timezone
 from learncoding.util import unique_slug_generator
 
 from .managers import PublishedManager
+
+os.environ['PYTHONBREAKPOINT'] = '0'
 
 
 class Article(models.Model):
